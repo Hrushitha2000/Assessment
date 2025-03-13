@@ -2,13 +2,17 @@ package Final;
 import org.json.JSONObject;
 import org.json.XML;
 import java.io.*;
+import java.util.Scanner;
 
 public class XmlToJsonConverter {
     public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
         
-        String xmlPath = "C:\\soft\\input.xml";  
+        System.out.println("Enter the path of xml file");
+        String xmlPath = sc.nextLine();
         
-        String jsonPath = "C:\\soft\\output.json"; 
+        System.out.println("Enter the output path for json file");
+        String jsonPath = sc.nextLine();
 
         try {
             
