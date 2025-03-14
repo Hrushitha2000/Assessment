@@ -33,7 +33,7 @@ public class FileProcessor {
         int currentRow = 0;
         while ((bytesRead = fis.read(data)) != -1) {
             String line = new String(data, 0, bytesRead);
-            String[] values = line.split("\t"); // This is a naive approach
+            String[] values = line.split("\t"); 
 
             if (currentRow >= startRow - 1) {
                 for (String value : values) {
